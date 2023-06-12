@@ -1,0 +1,16 @@
+{
+  "name": "PWA APP",
+  "short_name": "PWA APP",
+  "icons": [
+    {
+      "src": "https://developer.mozilla.org/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
