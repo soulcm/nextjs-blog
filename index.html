@@ -42,12 +42,18 @@
       }
       register.pushManager.getSubscription().then((subscription) => {
         console.log('subscription get :>> ', subscription);
-        subscription && subscription.unsubscribe();
+        if (subscription) {
+          console.log('object :>> ', JSON.stringify({
+                subscription
+              }));
+              return
+        }
+        // subscription && subscription.unsubscribe();
         register.pushManager.subscribe({
           userVisibleOnly: true,
           applicationServerKey: base64ToUint8Array('BKYVdZt87Mwh7SIXPkJm8LkfnganvmPS0OA1WUx42uInbfr5xBan6whKYVBY7g5XFWols2CoygfmhaRIQ2gINp8')
         }).then((subscription) => {
-          console.log('sub subscription :>> ', subscription);
+          console.log('sub subscription :>> ', JSON.stringify(subscription));
         }).catch((err) => {
           console.log('sub err :>> ', err.message);
         })
