@@ -10,7 +10,7 @@
   ],
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
-  "start_url": "/",
+  "start_url": "/nextjs-blog",
   "display": "standalone",
   "orientation": "portrait"
 }
